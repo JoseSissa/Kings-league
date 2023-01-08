@@ -1,0 +1,24 @@
+{
+  "name": "kings-league",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseSissa/Kings-league.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoseSissa/Kings-league/issues"
+  },
+  "homepage": "https://github.com/JoseSissa/Kings-league#readme",
+  "dependencies": {
+    "cheerio": "1.0.0-rc.12"
+  }
+}
