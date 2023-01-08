@@ -20,5 +20,12 @@
   "homepage": "https://github.com/JoseSissa/Kings-league#readme",
   "dependencies": {
     "cheerio": "1.0.0-rc.12"
+  },
+  "devDependencies": {
+    "eslint": "^8.31.0",
+    "standard": "^17.0.0"
+  },
+  "eslintConfig": {
+    "extends": "standard"
   }
 }
