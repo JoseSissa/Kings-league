@@ -1,0 +1,110 @@
+[
+  {
+    "team": "Ultimate Móstoles",
+    "wins": 2,
+    "loses": 0,
+    "scored": 8,
+    "conceded": 3,
+    "cardsYellow": 1,
+    "cardsRed": 0
+  },
+  {
+    "team": "1K FC",
+    "wins": 2,
+    "loses": 0,
+    "scored": 7,
+    "conceded": 4,
+    "cardsYellow": 0,
+    "cardsRed": 0
+  },
+  {
+    "team": "Saiyans FC",
+    "wins": 2,
+    "loses": 0,
+    "scored": 5,
+    "conceded": 3,
+    "cardsYellow": 3,
+    "cardsRed": 0
+  },
+  {
+    "team": "Kunisports",
+    "wins": 2,
+    "loses": 0,
+    "scored": 3,
+    "conceded": 1,
+    "cardsYellow": 1,
+    "cardsRed": 0
+  },
+  {
+    "team": "El Barrio",
+    "wins": 1,
+    "loses": 1,
+    "scored": 7,
+    "conceded": 3,
+    "cardsYellow": 1,
+    "cardsRed": 0
+  },
+  {
+    "team": "Los Troncos FC",
+    "wins": 1,
+    "loses": 1,
+    "scored": 8,
+    "conceded": 8,
+    "cardsYellow": 1,
+    "cardsRed": 0
+  },
+  {
+    "team": "Porcinos FC",
+    "wins": 1,
+    "loses": 1,
+    "scored": 7,
+    "conceded": 7,
+    "cardsYellow": 1,
+    "cardsRed": 0
+  },
+  {
+    "team": "Rayo de Barcelona",
+    "wins": 1,
+    "loses": 1,
+    "scored": 7,
+    "conceded": 7,
+    "cardsYellow": 0,
+    "cardsRed": 0
+  },
+  {
+    "team": "Jijantes FC",
+    "wins": 0,
+    "loses": 2,
+    "scored": 4,
+    "conceded": 7,
+    "cardsYellow": 2,
+    "cardsRed": 0
+  },
+  {
+    "team": "XBUYER TEAM",
+    "wins": 0,
+    "loses": 2,
+    "scored": 3,
+    "conceded": 6,
+    "cardsYellow": 1,
+    "cardsRed": 0
+  },
+  {
+    "team": "Aniquiladores FC",
+    "wins": 0,
+    "loses": 2,
+    "scored": 3,
+    "conceded": 8,
+    "cardsYellow": 0,
+    "cardsRed": 0
+  },
+  {
+    "team": "PIO FC",
+    "wins": 0,
+    "loses": 2,
+    "scored": 1,
+    "conceded": 6,
+    "cardsYellow": 3,
+    "cardsRed": 0
+  }
+]
