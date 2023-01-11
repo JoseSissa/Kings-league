@@ -2,6 +2,8 @@ import * as cheerio from 'cheerio';
 import { writeFile } from 'node:fs/promises'
 import path from 'node:path'
 
+import TEAMS from '../db/teams.json' assert { type: 'json'  }
+
 const URLS = {
     leaderboard: 'https://kingsleague.pro/estadisticas/clasificacion/',
 }
@@ -13,8 +15,9 @@ async function scrape (url) {
 async function getLeaderBoard () {
     const $ = await scrape(URLS.leaderboard)
     const $rows = $('table tbody tr')
+
     const LEADERBOARD_SELECTORS = {
-        team: {selector: '.fs-table-text_3', typeOf: 'string'},
+        teamName: {selector: '.fs-table-text_3', typeOf: 'string'},
         wins: {selector: '.fs-table-text_4', typeOf: 'number'},
         loses: {selector: '.fs-table-text_5', typeOf: 'number'},
         scored: {selector: '.fs-table-text_6', typeOf: 'number'},
@@ -22,6 +25,8 @@ async function getLeaderBoard () {
         cardsYellow: {selector: '.fs-table-text_8', typeOf: 'number'},
         cardsRed: {selector: '.fs-table-text_9', typeOf: 'number'}
     }
+
+    const getTeamFrom = ({ name }) => TEAMS.find(team => team.name === name)
 
     const cleanText = text => text
         .replace(/\t|\n|\s:/g, '')
@@ -38,8 +43,16 @@ async function getLeaderBoard () {
                 : cleanedValue
             return [key, value]
         })
+
+        // leaderboard.push(Object.fromEntries(leaderBoardEntries))
+        const { team: teamName, ...leaderboardForTeam  } = Object.fromEntries(leaderBoardEntries)
+        const team = getTeamFrom({ name: teamName})
+
         // The Object.fromEntries() static method transforms a list of key-value pairs into an object
-        leaderBoard.push(Object.fromEntries(leaderBoardEntries))
+        leaderBoard.push({
+            ...leaderboardForTeam,
+            team
+        })
     })
     return leaderBoard
 }
